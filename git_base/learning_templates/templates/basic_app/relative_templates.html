@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome to relative url templates</h1>
+    <!--Para usar TT usamos nuestro app_name como se ve debajo-->
+    <a href="{% url 'basic_app:other' %}">The Other Page</a>
+    <!--En ciertas ocasiones es necesario primero correr python manage.py migrate-->
+    <a href="{% url 'admin:index' %}">Admin Page</a>
+    <!--Para index basta con indicar 'index'-->
+    <a href="{% url 'index' %}">Link to index</a>
+</body>
+</html>
